@@ -115,7 +115,7 @@ def butonla(sehife, modullar):
     butonlar = []
     for pairs in pairs[sehife]:
         butonlar.append([custom.Button.inline("⚡ " + pair, data=f"bilgi[{sehife}]({pair})") for pair in pairs])
-    butonlar.append([custom.Button.inline("👈🏻 Geri", data=f"sehife({(max_pages - 1) if sehife == 0 else (sehife - 1)})"), custom.Button.inline("❎ Bağla ❎", data="close"), custom.Button.inline("İləri 👉🏻", data=f"sehife({0 if sehife == (max_pages - 1) else sehife + 1})")])
+    butonlar.append([custom.Button.inline("👈🏻 Geri", data=f"sehife({(max_pages - 1) if sehife == 0 else (sehife - 1)})"), custom.Button.inline("Button Mode exit", data="close"), custom.Button.inline("İləri 👉🏻", data=f"sehife({0 if sehife == (max_pages - 1) else sehife + 1})")])
     return [max_pages, butonlar]
 
 with bot:
@@ -133,13 +133,13 @@ with bot:
     DEFAULT_NAME = f"{me.first_name}"
     SAHIB = me.id
     BREND_MENTION = f"[{DEFAULT_NAME}](tg://user?id={SAHIB})"
-    helplogo = "https://telegra.ph/file/92494510fe2b53d30492c.gif"
+    helplogo = "https://telegra.ph//file/f9ff8720194c2053021f6.jpg"
 
     try:
         @tgbot.on(NewMessage(pattern='/start'))
         async def helpstart(event):
             if not event.message.from_id == uid:
-                await event.reply(f'Salam mən @BrendUserbot Assistant!\nMən {BREND_MENTION} üçün hazırlanmışam, yəni sənə kömək edə bilmərəm.\nAmma sən də öz hesabına [Brend Userbot](t.me/BrendUserbot) qura bilərsən.')
+                await event.reply(f'Salam mən @BrendUserbot Assistant!\nMən {BREND_MENTION} üçün hazırlanmışam, yəni sənə kömək edə bilmərəm.\nAmma sən də öz hesabına [Brend Userbot](t.me/BrendUserbot) qura bilərsən. (beta by şusta)')
             else:
                 await event.reply(f'Salam {DEFAULT_NAME}!\nBrend Köməkçi aktivdir.')
                                   
@@ -154,13 +154,13 @@ with bot:
                 result = builder.photo(
                     file=helplogo,
                     link_preview=False, 
-                    text=f"**⚡ 𝐁𝐫𝐞𝐧𝐝 𝐔𝐬𝐞𝐫𝐛𝐨𝐭​**\n\n**📥 Yüklənən modul sayı:** `{len(CMD_HELP)}`\n**📄 Səhifə:** 1/{veriler[0]}", 
+                    text=f"**⚡ Bʀᴇɴᴅ UsᴇʀBᴏᴛ**\n\n**📥 Yüklənən modul sayı:** `{len(CMD_HELP)}`\n**📄 Səhifə:** 1/{veriler[0]}", 
                     buttons=veriler[1])
             elif query.startswith("http"):
                 parca = query.split(" ")
                 result = builder.article("@Brend", text=f"**📂 Fayl uğurla {parca[2]} saytına yükləndi!**\n\n⏱️ Yükləmə müddəti: {parca[1][:3]} saniyə\n[‏‏‎hmm]({parca[0]})", buttons=[[custom.Button.url('URL', parca[0])]], link_preview=True)
             else:
-                result = builder.article("@BrendUserbot", text="@BrendUserbot işlətməyi yoxlayın! Sizdə Hesabınıza bot qurub istifadə edə bilərsiniz.", buttons=[[custom.Button.url("⚡ Brend Userbot", "https://t.me/BrendUserBot"), custom.Button.url("Dəstək Qrupu 👨🏻‍🔧", "https://t.me/BrendSUP")], [custom.Button.url("📨 Plugin Kanalı 📢", "https://t.me/BrendPlugin")]], link_preview=False)
+                result = builder.article("@BrendUserbot", text="@BrendUserbot işlətməyi yoxlayın! Sizdə Hesabınıza bot qurub istifadə edə bilərsiniz.", buttons=[[custom.Button.url("⚡ Brend Userbot", "https://t.me/BrendUserBot"), custom.Button.url("Dəstək Qrupu 👨🏻‍🔧", "https://t.me/BrendSUP")], custom.Button.url("beta şusta", "https://t.me/aliyefhsos")], [custom.Button.url("📨 Plugin Kanalı 📢", "https://t.me/BrendPlugin")]], link_preview=False)
             await event.answer([result] if result else None)
 
         @tgbot.on(callbackquery.CallbackQuery(data=compile(b"sehife\((.+?)\)")))
@@ -169,7 +169,7 @@ with bot:
                 return await event.answer("❌ Hey! Mənim mesajlarıma toxunma! Öz hesabına @BrendUserbot qur.", cache_time=0, alert=True)
             sehife = int(event.data_match.group(1).decode("UTF-8"))
             veriler = butonla(sehife, CMD_HELP)
-            text = f"**⚡ 𝐁𝐫𝐞𝐧𝐝 𝐔𝐬𝐞𝐫𝐛𝐨𝐭​**\n\n**📥 Yüklənən modul sayı:** `{len(CMD_HELP)}`\n**📄 Səhifə:** {sehife + 1}/{veriler[0]}"
+            text = f"**⚡ 𝐁Bʀᴇɴᴅ UsᴇʀBᴏᴛ​**\n\n**📥 Yüklənən modul sayı:** `{len(CMD_HELP)}`\n**📄 Səhifə:** {sehife + 1}/{veriler[0]}"
             await event.edit(text, file=helplogo, buttons=veriler[1], link_preview=False)
         
         @tgbot.on(callbackquery.CallbackQuery(data=compile(rb"ofen")))
@@ -178,7 +178,7 @@ with bot:
                 return await event.answer("❌ Hey! Mənim mesajlarıma toxunma! Öz hesabına @BrendUserbot qur.", cache_time=0, alert=True)
             sehife = int(looters)
             veriler = butonla(sehife, CMD_HELP)
-            text = f"**⚡ 𝐁𝐫𝐞𝐧𝐝 𝐔𝐬𝐞𝐫𝐛𝐨𝐭​**\n\n**📥 Yüklənən modul sayı:** `{len(CMD_HELP)}`\n**📄 Səhifə:** {sehife + 1}/{veriler[0]}"
+            text = f"**⚡ 𝐁Bʀᴇɴᴅ UsᴇʀBᴏᴛ​**\n\n**📥 Yüklənən modul sayı:** `{len(CMD_HELP)}`\n**📄 Səhifə:** {sehife + 1}/{veriler[0]}"
             await event.edit(text, file=helplogo,  buttons=veriler[1],  link_preview=False)
 
         @tgbot.on(callbackquery.CallbackQuery(data=compile(b"close")))
