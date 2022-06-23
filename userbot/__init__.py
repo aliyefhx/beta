@@ -160,7 +160,7 @@ with bot:
                 parca = query.split(" ")
                 result = builder.article("@Brend", text=f"**📂 Fayl uğurla {parca[2]} saytına yükləndi!**\n\n⏱️ Yükləmə müddəti: {parca[1][:3]} saniyə\n[‏‏‎hmm]({parca[0]})", buttons=[[custom.Button.url('URL', parca[0])]], link_preview=True)
             else:
-                result = builder.article("@BrendUserbot", text="@BrendUserbot işlətməyi yoxlayın! Sizdə Hesabınıza bot qurub istifadə edə bilərsiniz.", buttons=[[custom.Button.url("⚡ Brend Userbot", "https://t.me/BrendUserBot"), custom.Button.url("Dəstək Qrupu 👨🏻‍🔧", "https://t.me/BrendSUP")], custom.Button.url("beta şusta", "https://t.me/aliyefhsos")], [custom.Button.url("📨 Plugin Kanalı 📢", "https://t.me/BrendPlugin")]], link_preview=False)
+                result = builder.article("@BrendUserbot", text="@BrendUserbot işlətməyi yoxlayın! Sizdə Hesabınıza bot qurub istifadə edə bilərsiniz.", buttons=[[custom.Button.url("⚡ Brend Userbot", "https://t.me/BrendUserBot"), custom.Button.url("Dəstək Qrupu 👨🏻‍🔧", "https://t.me/BrendSUP")], custom.Button.url("beta şusta", "https://t.me/aliyefhsos"), [custom.Button.url("📨 Plugin Kanalı 📢", "https://t.me/BrendPlugin")]], link_preview=False)
             await event.answer([result] if result else None)
 
         @tgbot.on(callbackquery.CallbackQuery(data=compile(b"sehife\((.+?)\)")))
