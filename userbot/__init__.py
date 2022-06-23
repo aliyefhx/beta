@@ -196,7 +196,7 @@ with bot:
             sehife = int(event.data_match.group(1).decode("UTF-8"))
             emr = event.data_match.group(2).decode("UTF-8")
             try:
-                butonlar = [custom.Button.inline("💎 " + cmd[0], data=f"emr[{emr}[{sehife}]]({cmd[0]})") for cmd in CMD_HELP_BOT[emr]['commands'].items()]
+                butonlar = [custom.Button.inline("📂 " + cmd[0], data=f"emr[{emr}[{sehife}]]({cmd[0]})") for cmd in CMD_HELP_BOT[emr]['commands'].items()]
             except KeyError:
                 return await event.answer("❌ Bu modula açıqlama yazılmayıb.", cache_time=0, alert=True)
             butonlar = [butonlar[i:i + 2] for i in range(0, len(butonlar), 2)]
