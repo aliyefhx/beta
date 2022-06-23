@@ -184,9 +184,9 @@ with bot:
         @tgbot.on(callbackquery.CallbackQuery(data=compile(b"close")))
         async def sehife(event):
             if not event.query.user_id == uid: 
-                return await event.answer("❌ Hey! Mənim mesajlarıma toxunma! Öz hesabına @BrendUserbot qur.", cache_time=0, alert=True)
+                return await event.answer("❌ Hey! Mənim mesajlarıma toxunma! Öz hesabına @BrendUserbot qur. (beta by @aliyefhsos).", cache_time=0, alert=True)
             buttons =[[custom.Button.inline("Menyunu aç", data="ofen")]]
-            await event.edit("Menyu bağlandı", buttons=buttons)
+            await event.edit("Bʀᴇɴᴅ UsᴇʀBᴏᴛ\nMenu connected\nstatus online\n   ", buttons=buttons)
 
 
         @tgbot.on(callbackquery.CallbackQuery(data=compile(b"bilgi\[(\d*)\]\((.*)\)")))
