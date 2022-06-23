@@ -169,7 +169,7 @@ with bot:
                 return await event.answer("❌ Hey! Mənim mesajlarıma toxunma! Öz hesabına @BrendUserbot qur.", cache_time=0, alert=True)
             sehife = int(event.data_match.group(1).decode("UTF-8"))
             veriler = butonla(sehife, CMD_HELP)
-            text = f"**⚡ 𝐁Bʀᴇɴᴅ UsᴇʀBᴏᴛ​**\n\n**📥 Yüklənən modul sayı:** `{len(CMD_HELP)}`\n**📄 Səhifə:** {sehife + 1}/{veriler[0]}"
+            text = f"**⚡ Bʀᴇɴᴅ UsᴇʀBᴏᴛ​**\n\n**📥 Yüklənən modul sayı:** `{len(CMD_HELP)}`\n**📄 Səhifə:** {sehife + 1}/{veriler[0]}"
             await event.edit(text, file=helplogo, buttons=veriler[1], link_preview=False)
         
         @tgbot.on(callbackquery.CallbackQuery(data=compile(rb"ofen")))
@@ -178,7 +178,7 @@ with bot:
                 return await event.answer("❌ Hey! Mənim mesajlarıma toxunma! Öz hesabına @BrendUserbot qur.", cache_time=0, alert=True)
             sehife = int(looters)
             veriler = butonla(sehife, CMD_HELP)
-            text = f"**⚡ 𝐁Bʀᴇɴᴅ UsᴇʀBᴏᴛ​**\n\n**📥 Yüklənən modul sayı:** `{len(CMD_HELP)}`\n**📄 Səhifə:** {sehife + 1}/{veriler[0]}"
+            text = f"**⚡ Bʀᴇɴᴅ UsᴇʀBᴏᴛ​**\n\n**📥 Yüklənən modul sayı:** `{len(CMD_HELP)}`\n**📄 Səhifə:** {sehife + 1}/{veriler[0]}"
             await event.edit(text, file=helplogo,  buttons=veriler[1],  link_preview=False)
 
         @tgbot.on(callbackquery.CallbackQuery(data=compile(b"close")))
