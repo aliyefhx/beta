@@ -160,7 +160,7 @@ except PhoneNumberInvalidError:
 for module_name in ALL_MODULES:
     imported_module = import_module("userbot.modules." + module_name)
 
-LOGS.info(f"Brend Userbot online! Support => @BrendSUP | Brend Version: {BREND_VERSION}")
+LOGS.info(f"Brend Userbot online (beta şusta)! Support => @BrendSUP | Brend Version: {BREND_VERSION}")
 """
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
