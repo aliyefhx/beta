@@ -13,7 +13,7 @@
             "NOT_FOUND_PLUGIN_CHANNEL": "`Pluginlərin həmişəlik olması üçün Id nizamlamamısınız. Pluginləriniz yenidən başladılan zaman silinə bilər!`",
             "PLUGIN_BUGGED": "⚠️ Plugin xətalı olduğundan yüklənmədi\n❌ Xəta: ",
             "PLUGIN_DESC": "Bu plugin qırağdan botunuz üçün yüklənmişdir. İstifadəsi:",
-            "PLUGIN_DOWNLOADED": "📥 Modul uğurla yükləndi\n➖➖➖➖➖➖➖➖➖➖➖\n📝İstifadəsi: %s",
+            "PLUGIN_DOWNLOADED": "Brend plugin install\n➖➖➖➖➖➖➖➖➖➖➖\n📝İstifadəsi: %s",
             "PLUGIN_WITHOUT_DESC": "Bu plugin qırağdan yüklənmişdir. İstifadəsi: #ƏMR TAPILMADI#",
             "PLUGIN_DESCLESS": "`Modul uğurla yükləndi! Ancaq əmri təssüf ki, tapa bilmədim.`",
             "PLUG_DESC": "Bu plugin qırağdan yüklənmişdir. İstifadəsi: .",
