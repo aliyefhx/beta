@@ -42,7 +42,6 @@ if LANGUAGE_JSON == None:
         try:
             LANGUAGE_JSON = loads(open(f"./userbot/language/{LANGUAGE}.brendjson", "r").read())
         except JSONDecodeError:
-            raise Exception("Invalid json file")
     else:
         if path.isfile("./userbot/language/DEFAULT.brendjson"):
             LOGS.warn("Default dil faylı istifadə olunur...")
