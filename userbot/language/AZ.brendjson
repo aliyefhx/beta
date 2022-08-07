@@ -103,10 +103,10 @@
         },
 
         "afk": {
-            "REASON": "ℹ️ Səbəb",
-            "AFK": "🗣️ Sahibim indi Burda Deyil.",
-            "IM_AFK": "🤖 Hazırda AFK-yam.",
-            "IM_NOT_AFK": "✅ Sahibim geri qayıtdı."
+            "REASON": "Səbəb?",
+            "AFK": "{mention} sahib indi Burda Deyil.",
+            "IM_AFK": "{mention} AFK-oldun.",
+            "IM_NOT_AFK": "{mention} artığ AFK-deyilsən."
         },
 
         "auto": {
@@ -134,10 +134,10 @@
         },
 
         "chat": {
-            "NAME": "🏷️ Adı:",
-            "USERNAME": "👤 İstifadəçi adı:",
-            "ID": "🆔 İstifadəçi ID:",
-            "GROUP": "ℹ️ Söhbət ID:",
+            "NAME": "-------------\n🏷️ Adı:",
+            "USERNAME": "-------------\n👤 İstifadəçi adı:",
+            "ID": -------------\n🆔 İstifadəçi ID:",
+            "GROUP": "-------------\nℹ️ Söhbət ID:",
             "NEED_LOG": "`Bu xüsusiyyəti aktivləşdirmək üçün giriş açıq olmalıdır!`",
             "UNMUTED": "`Çatın səsi açıldı`",
             "MUTED": "`Çat səssiz rejimdədir!`",
@@ -183,9 +183,9 @@
             "SLEEPING": "`Xoruldayaraq yatıram...`",
             "GOODMORNIN_YALL": "`Sabahınız xeyir!`",
             "GOODBYE_MFRS": "👋🏻 Görüşənədək...\n⚡ **Brend Userbot söndürüldü**",
-            "RESTARTING": "🔄 Brend Userbot Yenidən Başladılır",
-            "SUPPORT_GROUP": "⚡ [Brend Support](http://t.me/BrendSup) qrupuna baxa bilərsiniz.",
-            "OWNER": "⚡Brend Userbot [Hüseyn](https://t.me/Mr_HD_20) tərəfindən hazırlanmışdır. \n",
+            "RESTARTING": "🔄 Brend Userbot restart is being ",
+            "SUPPORT_GROUP": "⚡ [Brend Support](http://t.me/BrendSupport) qrupuna baxa bilərsiniz.",
+            "OWNER": "⚡Brend Userbot  Edit/Update [Bgmaliy](https://t.me/aliyefhsos). \n",
             "REPO": "[Brend Userbot Repo](https://github.com/brendsupport/brenduserbot)",
             "CHECK_LOGS": "`Tapılmış Mesaj üçün istifadəçi qeydlərini yoxlayın!`",
             "WRONG_INPUT": "**Bilinməyən komanda!** `İstifadəsi: .liste gmute/gban`",
@@ -289,7 +289,7 @@
             "SEARCHING": "🔎 `Musiqi axtarılır...`",
             "BLOCKED_DEEZER": "`Mmmh deyəsən` @DeezerMusicBot `bloklamısan zəhmət olmasa bloku aç",
             "NOT_FOUND": "`Axtardığınız mahnı tapılmadı! Bağışlayın.`",
-            "UPLOADED_WITH": "@BrendUserBot ilə yükləndi"
+            "UPLOADED_WITH": "@BrendUserBot  & @aliyefhsos Music downlad"
         },
 
         "stickers": {
